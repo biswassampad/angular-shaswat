@@ -1,0 +1,198 @@
+<mat-toolbar class="tool" color="primary">
+    <mat-toolbar-row>
+        <button mat-button>
+            <span class="mat-button-wrapper">call us 24x7 Helpline: 1800 111 2222</span>
+        </button>
+        <!-- Select Country -->
+        <span class="example-spacer"></span>
+        <button mat-button [matMenuTriggerFor]="countryMenu">{{countryValue}}
+            <mat-icon>
+                arrow_drop_down
+            </mat-icon></button>
+        <mat-menu #countryMenu="matMenu">
+            <!-- <button mat-menu-item>None</button> -->
+            <button mat-menu-item *ngFor="let c of country" value="c.name"
+                (click)="selectCountry(c.name)">{{c.name}}</button>
+        </mat-menu>
+
+        <!-- Select Language -->
+        <button mat-button [matMenuTriggerFor]="lang">{{langVal}}
+            <mat-icon>
+                arrow_drop_down
+            </mat-icon></button>
+        <mat-menu #lang="matMenu">
+            <!-- <button mat-menu-item>None</button> -->
+            <button mat-menu-item *ngFor="let l of language" value="c.language"
+                (click)="selectLang(l.name)">{{l.name}}</button>
+        </mat-menu>
+        <!-- <button mat-icon-button>
+            <mat-icon>home</mat-icon>
+        </button> -->
+        <button mat-button>SignUp</button>
+        <button mat-button>Login</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-toolbar class="nav">
+    <mat-toolbar-row class="navrow">
+        <button mat-button><a href="#"><img src="assets/image/medisponsor-logo.png" class="logo"></a></button>
+
+
+        <span class="example-spacer"></span>
+
+
+        <div class="example-button-row" style="padding-right: 20px;">
+            <button mat-button [matMenuTriggerFor]="card" #menuTrigger="matMenuTrigger"
+                (mouseover)="menuTrigger.openMenu()" class="cards">
+                <div class="card">
+                    <img src="/assets/image/cards.png">
+                </div>
+                <!-- <mat-icon>
+                    arrow_drop_down
+                </mat-icon> -->
+            </button>
+            <mat-menu #card="matMenu" [overlapTrigger]="false">
+                <span (mouseleave)="menuTrigger.closeMenu()"></span>
+                <button mat-menu-item>Card 1</button>
+                <button mat-menu-item>Card 2</button>
+            </mat-menu>
+        </div>
+        <div class="example-button-row" style="padding-right: 20px;">
+            <button mat-button [matMenuTriggerFor]="patient" class="cards">
+                <div>
+                    <img src="/assets/image/patients.png">
+                </div>
+                <!-- <mat-icon>
+                    arrow_drop_down
+                </mat-icon> -->
+            </button>
+            <mat-menu #patient="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+        </div>
+        <div class="example-button-row" style="padding-right: 20px;">
+            <button mat-button [matMenuTriggerFor]="doc" class="cards">
+                <div class="card">
+                    <img src="/assets/image/doctors.png">
+                </div>
+                <!-- <mat-icon>
+                            arrow_drop_down
+                        </mat-icon> -->
+            </button>
+            <mat-menu #doc="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+        </div>
+        <div class="example-button-row" style="padding-right: 20px;">
+            <button mat-button [matMenuTriggerFor]="menu" class="cards">
+                <div class="healthcare">
+                    <img src="/assets/image/healthcare.png">
+                </div>
+                <!-- <mat-icon>
+                                    arrow_drop_down
+                                </mat-icon> -->
+            </button>
+            <mat-menu #healthcare="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+        </div>
+        <div class="example-button-row" style="padding-right: 20px;">
+            <button mat-button [matMenuTriggerFor]="menu" class="cards">
+                <div class="card">
+                    <img src="/assets/image/product-plan.png">
+                </div>
+                <!-- <mat-icon>
+                                    arrow_drop_down
+                                </mat-icon> -->
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<div class="container">
+  <div class="row align-center">
+    <!-- Left hand upper section with huge width-->
+    <div class="col-md-9">
+      <div class="content prime align-center">
+          <div class="col-md-12">
+            <div class="first-func">
+              <p>Enter the drop downs here </p>
+            </div>
+          </div>
+          <div class="col-md-11 mark dd2">
+            <p>Second drop down goes here</p>
+          </div>
+          <!-- cards section -->
+          <div class="col-md-12 brew-master">
+            <div class="card col-md-2 brew">
+              <!-- icon -->
+            </div>
+
+              <div class="card col-md-2 brew">
+                <!-- icon -->
+              </div>
+
+                <div class="card col-md-2 brew">
+                  <!-- icon -->
+                </div>
+
+                  <div class="card col-md-2 brew">
+                    <!-- icon -->
+                  </div>
+          </div>
+          <!-- chart sections -->
+          <div class="col-md-12  align-center">
+            <div class="card chart-one col-md-3">
+
+            </div>
+            <div class="card chart-one col-md-3">
+
+            </div>
+            <div class="card chart-one col-md-2">
+
+            </div>
+            <div class="card chart-one col-md-2">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Righ hand uppoer section with less width -->
+      <div class="col-md-3">
+        <div class="content bee">
+
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <!-- Left hand upper section with huge width-->
+    <div class="col-md-12">
+      <div class="content prime">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="row">
+    <!-- Left hand upper section with huge width-->
+    <div class="col-md-12">
+      <div class="content footer-prime">
+
+      </div>
+    </div>
+  </div>
+</div>

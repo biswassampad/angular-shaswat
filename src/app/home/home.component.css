@@ -1,0 +1,157 @@
+.tool{
+    min-height: 38px !important;
+    height: 38px;
+    background-color: #034da2;
+    /* background-color: #2061a3; */
+}
+.example-icon {
+    padding: 0 14px;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .nav{
+
+    background: linear-gradient(180deg, #e0f0d6, #d4edf2);
+    height: 100px ;
+    /* top: px;
+    position: fixed;
+    z-index: 0; */
+}
+
+.navrow{
+    height: 90px;
+}
+.cls {
+    border: 1px solid #e9e9e9;
+    background-color: white;
+    padding: 0px 0px 21px;
+
+}
+.cl {
+    background-color: #e9e9e9;
+    padding: 15px 10px;
+}
+
+example-viewer .docs-example-viewer-wrapper {
+    border: 1px solid rgba(0,0,0,.03);
+    box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+    margin: 4px;
+}
+
+.cards{
+  border-radius: 50%;
+}
+
+.docs-footer[_ngcontent-ofo-c497] {
+    padding: 12px;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.cards{
+        border-radius: 50%;
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+}
+.logo{
+    height:auto;
+    width: 164px;
+    padding-top: 12px;
+}
+
+/* .example-container {
+  display: flex;
+  flex-direction: column;
+   margin-top: 40px; */
+  /* background: white;
+
+    margin-left: 60px; */
+    /* width: 60%; */
+/* } */
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+.nav{
+    display: flex;
+}
+
+/* mat-grid-list {
+    margin-left: 35px;
+} */
+
+/* .container{
+    background: white;
+    height: 100px;
+    width: 200%;
+    padding: 0;
+    margin:0;
+} */
+
+/* content sectuion handle with care  */
+
+.container{
+  align-content: center;
+}
+.prime{
+  align-content:center;
+  height:900px;
+  border:1px solid black;
+  width:100%;
+  margin-top:50px;
+  padding:0;
+}
+.bee{
+  align-content:center;
+  height:900px;
+  border:1px solid black;
+  width:100%;
+  margin-top:50px;
+}
+.footer-prime{
+  align-content:center;
+  height:250px;
+  border:1px solid black;
+  width:100%;
+  margin-top:50px;
+}
+.first-func{
+  align-content: center;
+  height:70px;
+  border-bottom: 1px solid black;
+}
+.mark{
+  border:1px solid black;
+  background: transparent;
+}
+.align-center{
+  align-content: center;
+}
+.dd2{
+  margin:30px;
+  height:50px;
+}
+.brew-master{
+  align-content: center;
+  }
+.brew{
+  height:110px;
+  width:100px;
+  display:inline-block;
+  margin:30px;
+  margin-left:50px;
+}
+.chart-one{
+  height:400px;
+  display:inline-block;
+  margin:15px;
+}
+.no-padding{
+  padding:0 !important;
+}
